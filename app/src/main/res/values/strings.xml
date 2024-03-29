@@ -10,4 +10,6 @@
     <string name="FAQ">FAQ</string>
     <string name="MAP_LV1">Map</string>
     <string name="main">Main menu</string>
+    <string name="parking_map">utsa with parking</string>
+    <string name="todo">TODO</string>
 </resources>

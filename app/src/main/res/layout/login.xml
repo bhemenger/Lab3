@@ -19,15 +19,19 @@
 
     <EditText
         android:id="@+id/user_name"
-        android:layout_width="361dp"
-        android:layout_height="32dp"
+        android:layout_width="381dp"
+        android:layout_height="48dp"
         android:layout_marginTop="152dp"
+        android:autoText="true"
+        android:autofillHints=""
         android:ems="10"
         android:inputType="text"
+        android:text="@string/Username"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="Deprecated,LabelFor,DuplicateSpeakableTextCheck" />
 
     <TextView
         android:id="@+id/Password"
@@ -40,18 +44,17 @@
         app:layout_constraintStart_toStartOf="@+id/user_pass" />
 
     <Button
-        android:id="@+id/Login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
+        android:id="@+id/Login_Button"
+        android:layout_width="105dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="4dp"
         android:backgroundTint="#0F4EED"
-        android:text="@string/Logjn"
+        android:text="@string/Login"
         app:iconTint="#FF0000"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.529"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Remember_me"
-        tools:text="@string/Logjn" />
+        tools:text="@string/Login" />
 
     <Button
         android:id="@+id/Guest_button"
@@ -63,29 +66,35 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Login"
+        app:layout_constraintTop_toBottomOf="@+id/Login_Button"
         tools:text="@string/Guest_option" />
 
     <EditText
         android:id="@+id/user_pass"
-        android:layout_width="361dp"
-        android:layout_height="32dp"
+        android:layout_width="387dp"
+        android:layout_height="48dp"
         android:layout_marginTop="125dp"
+        android:autofillHints=""
         android:ems="10"
-        android:inputType="text"
+        android:hint="@string/Password"
+        android:inputType="text|textPassword"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/user_name"
-        app:layout_constraintTop_toBottomOf="@+id/user_name" />
+        app:layout_constraintTop_toBottomOf="@+id/user_name"
+        tools:ignore="DuplicateSpeakableTextCheck" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="356dp"
         android:layout_height="176dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="48dp"
         android:background="#0C2340"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/utsa_wordmark_white"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.418"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/utsa_wordmark_white" />

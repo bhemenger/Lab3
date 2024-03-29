@@ -8,6 +8,6 @@ public class MapActivity extends ComponentActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.login);
+        setContentView(R.layout.map);
     }
 }
