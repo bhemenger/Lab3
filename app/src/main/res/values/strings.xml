@@ -12,4 +12,15 @@
     <string name="main">Main menu</string>
     <string name="parking_map">utsa with parking</string>
     <string name="todo">TODO</string>
+    <string name="Full_Name">Full Name</string>
+    <string name="Email">Email\n</string>
+    <string name="Back">Back</string>
+    <string name="Sign_up">Sign up</string>
+    <string name="accreg">Account Registration</string>
+    <string name="Reginstruc">Please fill in all data below</string>
+    <string name="name">Name:</string>
+    <string name="Password_">Password:</string>
+    <string name="email">Email:</string>
+    <string name="name_">Name</string>
+    <string name="Register">Register</string>
 </resources>
