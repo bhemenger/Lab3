@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 import androidx.activity.ComponentActivity;
+
+import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
 
@@ -14,7 +16,7 @@ public class MainActivity extends ComponentActivity {
     private Button login;
     private Button guest;
     private Button register;
-    AssetManager f;
+    //AssetManager f;
     String[] arr;
 
 
@@ -22,7 +24,7 @@ public class MainActivity extends ComponentActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
         setupButtons();
-        f=getAssets();
+        //f=getAssets();
     }
       public EditText i1;
       public EditText i2;
@@ -63,13 +65,14 @@ public class MainActivity extends ComponentActivity {
     private int authenticate(String username, String password) {
         Scanner scan;
         String str;
+        String[] arr=null;
         int id = -1;
-
+        File f = new File(getFilesDir().getAbsolutePath()+"/login.txt");
         try {
-            scan = new Scanner(f.open("user_info"));
+            scan = new Scanner(openFileInput("login.txt"));
             while (scan.hasNextLine()) {
                 str = scan.nextLine();
-                String[] arr = str.split(",");
+                arr = str.split(",");
                 if (arr.length >= 3 && username.equalsIgnoreCase(arr[1]) && password.equals(arr[2])) {
                     id = Integer.parseInt(arr[0]);
                     break;
